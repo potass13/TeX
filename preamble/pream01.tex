@@ -1,6 +1,6 @@
 %!TEX encoding = Shift-JIS
 %Last update for this preamble : 2014-12-19
-%pream01.tex -- jsarticle,C’Œ‚ ‚èClisting –³
+%pream01.tex -- jsarticle,ï¼ŒæŸ±ã‚ã‚Šï¼Œlisting ç„¡
 
 %
 %usepackages
@@ -17,7 +17,7 @@
 \usepackage{framed}
 \usepackage{here}
 \usepackage{listings, jlisting}
-\renewcommand{\lstlistingname}{ƒŠƒXƒg}
+\renewcommand{\lstlistingname}{ãƒªã‚¹ãƒˆ}
 \lstset{language=c,
   basicstyle=\ttfamily\scriptsize,
   commentstyle=\textit,
@@ -33,7 +33,7 @@
 }
 \end{comment}
 %
-%—]”’Ý’è
+%ä½™ç™½è¨­å®š
 %
 \setlength{\textwidth}{\fullwidth}
 \setlength{\textheight}{40\baselineskip}
@@ -43,11 +43,11 @@
 \setlength{\headheight}{0pt}
 \setlength{\headsep}{10pt}
 %
-%’Œ‚ÌˆÊ’u
+%æŸ±ã®ä½ç½®
 %
-\pagestyle{myheadings} % ƒy[ƒW”Ô†&ƒwƒbƒ_
+\pagestyle{myheadings} % ãƒšãƒ¼ã‚¸ç•ªå·&ãƒ˜ãƒƒãƒ€
 %
-%’è—ŠÂ‹«
+%å®šç†ç’°å¢ƒ
 %
 \usepackage{theorem}
 \theoremstyle{break}
@@ -59,24 +59,24 @@
 \newtheorem{proof}{Proof.}\renewcommand{\theproof}{}
 %
 \makeatletter 
-%subsub‚Ì‚Æ‚«‚Ì’è—ŠÂ‹«‚ÌC³
-%u@v‚ðŠÜ‚Þê‡‚Í\makeatletter‚Æ\makeatother‚ÅˆÍ‚ñ‚¾”ÍˆÍ“à‚Åˆ—‚ð‚·‚é
-\renewcommand{\subsubsection}{% \newcommand ‚©‚ç \renewcommand ‚É•ÏX‚·‚é‚±‚Æ
-  \@startsection{subsubsection}% ‹æØ‚èƒRƒ}ƒ“ƒh‚Ì–¼‘Oisection, subsection“™j
-    {3}% [‚³(section‚ª1, subsection‚Í2“™j
-    {\z@}% ¶‚ÌƒCƒ“ƒfƒ“ƒg—Ê
-    {\Cvs \@plus.5\Cdp \@minus.3\Cdp}% ‘OƒAƒL Œ©o‚µã‚ÌƒXƒy[ƒX
-    {.5\Cvs \@plus.4\Cdp}% ŒãƒAƒL Œ©o‚µ‰º‚ÌƒXƒy[ƒX •‰‚É‚·‚é‚ÆŒ©o‚µŒã‚ÌƒXƒy[ƒX
-    {\normalfont\normalsize\headfont\raggedright}% Œ©o‚µ‚ÌƒtƒHƒ“ƒg
+%subsubã®ã¨ãã®å®šç†ç’°å¢ƒã®ä¿®æ­£
+%ã€Œ@ã€ã‚’å«ã‚€å ´åˆã¯\makeatletterã¨\makeatotherã§å›²ã‚“ã ç¯„å›²å†…ã§å‡¦ç†ã‚’ã™ã‚‹
+\renewcommand{\subsubsection}{% \newcommand ã‹ã‚‰ \renewcommand ã«å¤‰æ›´ã™ã‚‹ã“ã¨
+  \@startsection{subsubsection}% åŒºåˆ‡ã‚Šã‚³ãƒžãƒ³ãƒ‰ã®åå‰ï¼ˆsection, subsectionç­‰ï¼‰
+    {3}% æ·±ã•(sectionãŒ1, subsectionã¯2ç­‰ï¼‰
+    {\z@}% å·¦ã®ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆé‡
+    {\Cvs \@plus.5\Cdp \@minus.3\Cdp}% å‰ã‚¢ã‚­ è¦‹å‡ºã—ä¸Šã®ã‚¹ãƒšãƒ¼ã‚¹
+    {.5\Cvs \@plus.4\Cdp}% å¾Œã‚¢ã‚­ è¦‹å‡ºã—ä¸‹ã®ã‚¹ãƒšãƒ¼ã‚¹ è² ã«ã™ã‚‹ã¨è¦‹å‡ºã—å¾Œã®ã‚¹ãƒšãƒ¼ã‚¹
+    {\normalfont\normalsize\headfont\raggedright}% è¦‹å‡ºã—ã®ãƒ•ã‚©ãƒ³ãƒˆ
 }
 \makeatother
 %
-%’è‹`
+%å®šç¾©
 %
-\newcommand{\QED}{\rule[-2pt]{5pt}{10pt}} % Ø–¾I—¹
+\newcommand{\QED}{\rule[-2pt]{5pt}{10pt}} % è¨¼æ˜Žçµ‚äº†
 %
-\renewcommand{\figurename}{Fig.} % } -> Fig.
-\renewcommand{\tablename}{Tab.} % •\ -> Tab.
+\renewcommand{\figurename}{Fig.} % å›³ -> Fig.
+\renewcommand{\tablename}{Tab.} % è¡¨ -> Tab.
 %
 \def\defarrow{\overset{\mathrm{def}}{\Longleftrightarrow}} % <= def =>
 %
@@ -86,7 +86,7 @@
 \newcommand{\grad}{\mathrm{grad}\,} % grad
 \newcommand{\rot}{\mathrm{rot}\,} % rot
 %
-\def\MARU#1{{\rm\ooalign{\hfil\lower.168ex\hbox{#1}\hfil \crcr\mathhexbox20D}}} % ŠÛ•¶Žš
+\def\MARU#1{{\rm\ooalign{\hfil\lower.168ex\hbox{#1}\hfil \crcr\mathhexbox20D}}} % ä¸¸æ–‡å­—
 %
-\newcommand{\simgt}{\lower.5ex\hbox{$\; \buildrel > \over \sim \;$}} % ‹ßŽ—•s“™Ž® >=
-\newcommand{\simlt}{\lower.5ex\hbox{$\; \buildrel < \over \sim \;$}} % ‹ßŽ—•s“™Ž® <=
+\newcommand{\simgt}{\lower.5ex\hbox{$\; \buildrel > \over \sim \;$}} % è¿‘ä¼¼ä¸ç­‰å¼ >=
+\newcommand{\simlt}{\lower.5ex\hbox{$\; \buildrel < \over \sim \;$}} % è¿‘ä¼¼ä¸ç­‰å¼ <=
