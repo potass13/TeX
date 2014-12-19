@@ -1,0 +1,92 @@
+%!TEX encoding = Shift-JIS
+%Last update for this preamble : 2014-12-19
+%pream01.tex -- jsarticle,，柱あり，listing 無
+
+%
+%usepackages
+%
+\usepackage{amsmath,amssymb}
+\usepackage{bm}
+\usepackage{ascmac}
+\usepackage{braket}
+\usepackage{comment}
+%
+%listing (comment out)
+%
+\begin{comment}
+\usepackage{framed}
+\usepackage{here}
+\usepackage{listings, jlisting}
+\renewcommand{\lstlistingname}{リスト}
+\lstset{language=c,
+  basicstyle=\ttfamily\scriptsize,
+  commentstyle=\textit,
+  classoffset=1,
+  keywordstyle=\bfseries,
+  frame=tRBl,
+  framesep=5pt,
+  showstringspaces=false,
+  numbers=left,
+  stepnumber=1,
+  numberstyle=\tiny,
+  tabsize=2
+}
+\end{comment}
+%
+%余白設定
+%
+\setlength{\textwidth}{\fullwidth}
+\setlength{\textheight}{40\baselineskip}
+\addtolength{\textheight}{\topskip}
+\setlength{\voffset}{-0.2in}
+\setlength{\topmargin}{0pt}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{10pt}
+%
+%柱の位置
+%
+\pagestyle{myheadings} % ページ番号&ヘッダ
+%
+%定理環境
+%
+\usepackage{theorem}
+\theoremstyle{break}
+\theorembodyfont{\normalfont}
+\newtheorem{thm}{Thm}[section]
+\newtheorem{defi}{Def}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{prop}{Prop}[section]
+\newtheorem{proof}{Proof.}\renewcommand{\theproof}{}
+%
+\makeatletter 
+%subsubのときの定理環境の修正
+%「@」を含む場合は\makeatletterと\makeatotherで囲んだ範囲内で処理をする
+\renewcommand{\subsubsection}{% \newcommand から \renewcommand に変更すること
+  \@startsection{subsubsection}% 区切りコマンドの名前（section, subsection等）
+    {3}% 深さ(sectionが1, subsectionは2等）
+    {\z@}% 左のインデント量
+    {\Cvs \@plus.5\Cdp \@minus.3\Cdp}% 前アキ 見出し上のスペース
+    {.5\Cvs \@plus.4\Cdp}% 後アキ 見出し下のスペース 負にすると見出し後のスペース
+    {\normalfont\normalsize\headfont\raggedright}% 見出しのフォント
+}
+\makeatother
+%
+%定義
+%
+\newcommand{\QED}{\rule[-2pt]{5pt}{10pt}} % 証明終了
+%
+\renewcommand{\figurename}{Fig.} % 図 -> Fig.
+\renewcommand{\tablename}{Tab.} % 表 -> Tab.
+%
+\def\defarrow{\overset{\mathrm{def}}{\Longleftrightarrow}} % <= def =>
+%
+\def\sgn{\mathrm{sgn}\,} % sgn
+\def\per{\mathrm{per}\,} % per
+\newcommand{\diver}{\mathrm{div}\,} % div
+\newcommand{\grad}{\mathrm{grad}\,} % grad
+\newcommand{\rot}{\mathrm{rot}\,} % rot
+%
+\def\MARU#1{{\rm\ooalign{\hfil\lower.168ex\hbox{#1}\hfil \crcr\mathhexbox20D}}} % 丸文字
+%
+\newcommand{\simgt}{\lower.5ex\hbox{$\; \buildrel > \over \sim \;$}} % 近似不等式 >=
+\newcommand{\simlt}{\lower.5ex\hbox{$\; \buildrel < \over \sim \;$}} % 近似不等式 <=
